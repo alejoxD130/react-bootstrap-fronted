@@ -37,7 +37,7 @@ function Item(props: task | goal) {
         Fecha de Vencimiento
       </Card.Text>
       <Card.Text>
-        {props.dueDate}
+        {props.duedate}
       </Card.Text>
     </Card.Body>
   <Card.Body>

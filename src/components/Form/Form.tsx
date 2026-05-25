@@ -24,12 +24,12 @@ const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault()
   const name = inputRefName.current?.value;
   const description = inputRefDescription.current?.value;
-  const dueDate = inputRefDueDate.current?.value;
-  if (name && description && dueDate) {
+  const duedate = inputRefDueDate.current?.value;
+  if (name && description && duedate) {
     if (isActiveInMenu === 'tasks') {
-      addTask({ id: Date.now(), name, description, dueDate });
+      addTask({ id: Date.now(), name, description, duedate });
     } else {
-      addGoal({ id: Date.now(), name, description, dueDate });
+      addGoal({ id: Date.now(), name, description, duedate });
     }
 
     if (onAdd) {
